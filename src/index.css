@@ -1,0 +1,76 @@
+/* Tema chiaro */
+.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+  }
+  
+  /* Tema scuro */
+  .dark {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+  }
+
+  .card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 0 8px;
+    color: var(--primary-color);
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  .card-footer {
+    padding: 16px;
+    border-top: 1px solid var(--secondary-color);
+    text-align: right;
+  }
+  
+  .card-footer button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-footer button:hover {
+    background-color: var(--secondary-color);
+  }
+  
