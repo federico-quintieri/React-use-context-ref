@@ -2,6 +2,7 @@ import { useState, createContext } from "react";
 import { Card } from "./components/Card";
 import { Profile } from "./components/Profile";
 import { Timer } from "./components/Timer";
+import { Form } from "./components/Form";
 
 // Creo context e lo esporto
 export const ThemeContext = createContext();
@@ -45,6 +46,8 @@ function App() {
       </AuthContext.Provider>
 
       <Timer></Timer>
+
+      <Form></Form>
     </>
   );
 }
